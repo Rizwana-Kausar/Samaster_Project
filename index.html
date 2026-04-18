@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>My Portfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#login">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Hi, I am a BSCS Student</h1>
+        <p>Welcome to my Dynamic Web App Portfolio</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div id="project-list" class="project-container">
+            <p>Loading projects...</p>
+        </div>
+    </section>
+<section id="admin">
+    <div id="login-form" class="login-box">
+        <h3>Admin Login</h3>
+        <input type="password" id="admin-pass" placeholder="Enter Password">
+        <button onclick="checkLogin()">Login</button>
+    </div>
+
+    <div id="admin-panel" class="login-box" style="display: none;">
+        <h3>Welcome Admin!</h3>
+        <input type="text" id="title" placeholder="Project Title">
+        <textarea id="desc" placeholder="Project Description"></textarea>
+        <button onclick="addProject()">Add Project</button>
+        <button onclick="logout()" style="background: gray;">Logout</button>
+    </div>
+</section>
+
+    <footer>
+        <p>Created by [Your Name] - 6th Semester</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
